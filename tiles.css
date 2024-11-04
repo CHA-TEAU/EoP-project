@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --text-color-default: #000000;
+    --text-color-light: #FFFFFF;
+    --bg-color-green: #004D40;
+    --bg-color-beige: #BCAAA4;
+    --bg-color-brown: #3E2723;
+}
+
+header {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.logo__img {
+    height: 90px;
+}
+
+.logo__img img {
+    width: 169px;
+    height: 141px;
+}
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__title h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--bg-color-green);
+}
+
+.header__title p {
+    width: 80%;
+    font-size: 20px;
+}
+
+/* MAIN CONTENT SECTION */
+
+.main__content {
+    margin: 50px auto;
+    width: 70%;
+    
+   display: grid;
+   grid-template-columns: 40% 60%;
+   gap: 50px 0;
+   align-items: center;
+   justify-content: center;
+}
+
+.main__img {
+    width: 313px; 
+}
+
+.main__img img {
+    width: 100%; 
+    height: auto;
+}
+
+.main__img label {
+    display: block; 
+    width: 100%; 
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+.main__text p {
+    font-size: 22px;
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+.main__text img {
+    width: 216px;
+    height: 76px;
+}
+
+/* MAIN CONTENT SECTION END*/
