@@ -35,12 +35,12 @@ header {
 /* HEADER LOGO */
 
 .logo__img {
-    height: 90px;
+    height: 80px;
 }
 
 .logo__img img {
-    width: 169px;
-    height: 141px;
+    width: 184px;
+    height: 97px;
 }
 
 /* HEADER LOGO END*/
@@ -56,11 +56,11 @@ header {
 .header__title h1 {
     font-size: 60px;
     font-weight: 600;
-    color: var(--bg-color-green);
+    color: var(--bg-color-brown);
 }
 
 .header__title p {
-    width: 80%;
+
     font-size: 20px;
 }
 
@@ -70,3 +70,189 @@ header {
 
 
 /* -------------------------/-------------------------- */
+
+/* MAIN CONTENT SECTION */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main__info {
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__info__img {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.main__info__img img {
+    width: 340px;
+    height: 256px;
+}
+
+.main__info__text {
+    margin: 30px 0;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.main__info__block {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.main__text p {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.main__text p:last-child {
+    margin-bottom: 0;
+}
+
+
+.main__img img {
+    width: 609px;
+    height: 457px;
+}
+/* MAIN CONTENT SECTION END*/
+
+/* PLATES EXIBITS SECTION */
+
+.plates__examples {
+    margin-top: 100px;
+}
+
+.plates__sprites {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.plates__sprites img {
+    width: 518px;
+    height: 390px;
+}
+
+.plates__info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.plates__info h3 {
+    font-weight: 600;
+}
+
+.plates__info span {
+    font-size: 14px;
+}
+
+.plates__info p {
+    text-align: justify;
+}
+
+/* PLATES EXIBITS SECTION END */
+
+/* PLATES TABLE SECTION */
+
+.plates__table {
+    margin-top: 100px;
+}
+
+.plates__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.plates__flex img {
+    width: 341px;
+    height: 257px;
+}
+
+.table__title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* PLATES TABLE SECTION END*/
+
+/* LINK BUTTONS SETTINGS */
+
+.links {
+    width: 80%;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links .link {
+    width: 220px;
+    height: 78px;
+    color: var(--text-color-light);
+}
+
+
+.links .link h1{
+   text-transform: uppercase;
+   position: relative;
+   padding: 2px 15px;
+
+   font-weight: 400;
+   font-size: 24px;
+   letter-spacing: 2px;
+}
+
+.links .link p{
+    text-transform: capitalize;
+    padding: 8px 15px 0;
+ }
+ 
+
+.links .link h1::after {
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--text-color-light);
+    opacity: 50%; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+}
+
+.links .main {
+    background-color: var(--bg-color-neutral);
+}
+
+.links .tiles {
+    background-color: var(--bg-color-green);
+}
+
+.links .plates {
+    background-color: var(--bg-color-beige);
+}
+
+.links .bricks {
+    background-color: var(--bg-color-brown);
+}
+
+/* LINK BUTTONS SETTINGS END*/

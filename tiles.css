@@ -130,6 +130,8 @@ header {
     justify-content: space-between;
     gap: 30px 20px;
     flex-wrap: wrap;
+
+    cursor: pointer;
 }
 
 .tile__card {

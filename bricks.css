@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --text-color-default: #000000;
+    --text-color-light: #FFFFFF;
+    --bg-color-green: #004D40;
+    --bg-color-beige: #BCAAA4;
+    --bg-color-brown: #3E2723;
+    --bg-color-neutral: #595959;
+}
+
+/* -------------------------/-------------------------- */
+
+/* HEADER SECTION */
+
+header {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+/* HEADER LOGO */
+
+.logo__img {
+    height: 80px;
+}
+
+.logo__img img {
+    width: 184px;
+    height: 97px;
+}
+
+/* HEADER LOGO END*/
+
+/* HEADER TITLE */
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__title h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--bg-color-brown);
+}
+
+.header__title p {
+
+    font-size: 20px;
+}
+
+/* HEADER TITLE */
+
+/* HEADER SECTION END*/
+
+
+/* -------------------------/-------------------------- */
+
+/* INTRO CONTENT SECTION */
+
+.container {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.into__content {
+    margin-top: 80px;
+}
+
+.into__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro__text p {
+    width: 80%;
+
+    font-size: 18px;
+    text-align: justify;
+}
+
+.intro__img img {
+    width: 420px;
+    height: 441px;
+}
+
+.intro__img label {
+   margin-top: 8px;
+   font-size: 14px;
+}
+/* INTRO CONTENT SECTION END*/
+
+/* MAIN CONTENT SECTION */
+
+.main__content {
+    margin-top: 100px;
+}
+
+.main__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__text p {
+    width: 80%;
+
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.main__img img {
+    width: 420px;
+    height: 660px;
+}
+
+.main__img label {
+   margin-top: 8px;
+   font-size: 14px;
+}
+
+/* MAIN CONTENT SECTION END*/
+
+/* BREAK TEXT SECTION */
+
+.break__block {
+    margin-top: 50px;
+}
+
+.break__text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.break__text::before {
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--bg-color-neutral);
+    opacity: 50%; 
+    position: absolute;
+    top: -10px; 
+    left: 0;
+}
+
+/* BREAK TEXT SECTION END*/
+
+
+/* BRICKS TABLE SECTION */
+.bricks__table {
+    margin-top: 100px;
+}
+
+.bricks__table__cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.tile__card {
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.tile__card h3 {
+    font-weight: 600;
+}
+
+.tile__card span {
+    font-size: 14px;
+    margin-top: auto; 
+}
+
+
+.brick__img img {
+    width: 540px;
+    height: 350px;
+}
+
+
+.tile__info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999; 
+}
+
+.hidden {
+    display: none; 
+}
+
+.info__content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 45%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.info__content img {
+    width: 310px;
+    height: 189px;
+
+    transition: transform ease-in-out 0.1s;
+}
+
+.info__content img:hover { 
+    transform: scale(2.4); 
+}
+
+.info__content p { 
+    font-size: 14px;
+}
+
+/* BRICKS TABLE SECTION END */
+
+/* ADDITIONAL INFO SECTION */
+
+.add__info__block {
+    margin-top: 100px;
+}
+
+
+.info__block p {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.info__block ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+
+.info__block ul li{
+   list-style: none;
+   padding-left: 20px;
+    
+}
+
+.info__scans {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info__scans img {
+    width: 539px;
+    height: 398px;
+}
+
+
+.scans__title {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+/* ADDITIONAL INFO SECTION END */
+
+/* LINK BUTTONS SETTINGS */
+
+.links {
+    width: 80%;
+    margin: 100px auto 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links .link {
+    width: 220px;
+    height: 78px;
+    color: var(--text-color-light);
+}
+
+
+.links .link h1{
+   text-transform: uppercase;
+   position: relative;
+   padding: 2px 15px;
+
+   font-weight: 400;
+   font-size: 24px;
+   letter-spacing: 2px;
+}
+
+.links .link p{
+    text-transform: capitalize;
+    padding: 8px 15px 0;
+ }
+ 
+
+.links .link h1::after {
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--text-color-light);
+    opacity: 50%; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+}
+
+.links .main {
+    background-color: var(--bg-color-neutral);
+}
+
+.links .tiles {
+    background-color: var(--bg-color-green);
+}
+
+.links .plates {
+    background-color: var(--bg-color-beige);
+}
+
+.links .bricks {
+    background-color: var(--bg-color-brown);
+}
+
+/* LINK BUTTONS SETTINGS END*/
