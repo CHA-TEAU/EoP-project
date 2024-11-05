@@ -16,6 +16,7 @@
     --bg-color-green: #004D40;
     --bg-color-beige: #BCAAA4;
     --bg-color-brown: #3E2723;
+    --bg-color-neutral: #595959;
 }
 
 /* -------------------------/-------------------------- */
@@ -79,8 +80,7 @@ header {
 
     display: grid;
     grid-template-columns: 40% 60%;
-    gap: 50px 0;
-    align-items: center;
+    gap: 60px 0;
     justify-content: center;
 }
 
@@ -103,7 +103,7 @@ header {
 }
 
 .main__text p {
-    font-size: 22px;
+    font-size: 18px;
     text-align: justify;
 
     margin-bottom: 20px;
@@ -195,7 +195,7 @@ header {
     width: 310px;
     height: 189px;
 
-    transition: transform ease-in-out 0.3s;
+    transition: transform ease-in-out 0.1s;
 }
 
 .info__content img:hover { 
@@ -207,3 +207,141 @@ header {
 }
 
 /* TILES TABLE END*/
+
+/* MURALIZED TILES SECTION */
+.mural__tiles {
+    margin: 100px auto;
+    width: 70%;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.murals__info {
+    text-align: justify;  
+
+}
+
+.murals__info h1{
+   font-size: 34px;
+   font-weight: 600;
+   text-align: justify;  
+   color: var(--bg-color-green);
+   margin-bottom: 10px;
+}
+
+.murals__img img {
+    width: 634px;
+    height: 459px;
+
+    padding: 15px;
+}
+
+.murals__img label {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.murals__exhibits {
+    margin: 100px auto;
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.exibits__img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.exibits__img img {
+    width: 310px;
+    height: 256px;
+}
+
+.exibits___desc h4{
+    margin: 30px 0 5px;
+    font-weight: 600;
+}
+
+.exibits___desc p{
+    font-size: 14px;
+}
+/* MURALIZED TILES SECTION END*/
+
+/* LINK BUTTONS SETTINGS */
+
+.links {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    text-decoration: none;
+}
+
+.links .link {
+    width: 220px;
+    height: 78px;
+    color: var(--text-color-light);
+}
+
+
+.links .link h1{
+   text-transform: uppercase;
+   position: relative;
+   padding: 2px 15px;
+
+   font-weight: 400;
+   font-size: 24px;
+   letter-spacing: 2px;
+}
+
+.links .link p{
+    text-transform: capitalize;
+    padding: 8px 15px 0;
+ }
+ 
+
+.links .link h1::after {
+    content: "";
+    display: block;
+    width: 100%; 
+    height: 2px; 
+    background-color: var(--text-color-light);
+    opacity: 50%; 
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+}
+
+.links .main {
+    background-color: var(--bg-color-neutral);
+}
+
+.links .tiles {
+    background-color: var(--bg-color-green);
+}
+
+.links .plates {
+    background-color: var(--bg-color-beige);
+}
+
+.links .bricks {
+    background-color: var(--bg-color-brown);
+}
+
+/* LINK BUTTONS SETTINGS END*/

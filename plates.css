@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Spectral SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --text-color-default: #000000;
+    --text-color-light: #FFFFFF;
+    --bg-color-green: #004D40;
+    --bg-color-beige: #BCAAA4;
+    --bg-color-brown: #3E2723;
+    --bg-color-neutral: #595959;
+}
+
+/* -------------------------/-------------------------- */
+
+/* HEADER SECTION */
+
+header {
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+/* HEADER LOGO */
+
+.logo__img {
+    height: 90px;
+}
+
+.logo__img img {
+    width: 169px;
+    height: 141px;
+}
+
+/* HEADER LOGO END*/
+
+/* HEADER TITLE */
+
+.header__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__title h1 {
+    font-size: 60px;
+    font-weight: 600;
+    color: var(--bg-color-green);
+}
+
+.header__title p {
+    width: 80%;
+    font-size: 20px;
+}
+
+/* HEADER TITLE */
+
+/* HEADER SECTION END*/
+
+
+/* -------------------------/-------------------------- */
